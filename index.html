@@ -18,17 +18,36 @@
 	<div class="row">
 		<div class="form-group">
 		  <label for="comment">Input Box:</label>
-		  <textarea class="form-control" rows="10" id="inputBox"></textarea>
+		  <textarea class="form-control" rows="9" id="inputBox"></textarea>
 		</div>
 	</div>
+	<div class="alertBox">
+		<div class="alert alert-danger" data-dismiss="alert" aria-label="close">
+		  <strong>Insert Value!</strong> Field can't be empty.
+		</div>
+	</div>	
 	<hr>
 	<div class="row">
-		<div class="col-sm-6">
-			<div class="col-sm-3 center">
+		<div class="col-sm-12">
+			<div class="col-sm-4 well text-center">
 				<button type="button" onclick="compress();" class="btn btn-default">Compress</button>
 			</div>
-			<div class="col-sm-3 center">
+			<div class="col-sm-4 well text-center">
 				<button type="button" id="resetAll" onclick="resetAllField();" class="btn btn-default">Reset</button>
+			</div>
+			<div class="col-sm-4 well text-center">
+				<div class="col-sm-6 form-group" style="margin-bottom: 0px;">
+				  <select class="form-control" id="uncompressionType">
+					<option>json</option>
+					<option>xml</option>
+					<option>html</option>
+					<option>js</option>
+					<option>css</option>
+				  </select>
+				</div>
+				<div class="col-sm-6">
+					<button type="button" onclick="uncompress();" class="btn btn-default">Uncompress</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -36,7 +55,12 @@
 	<div class="row">
 		<div class="form-group">
 		  <label for="comment">Output Box:</label>
-		  <textarea class="form-control" rows="10" id="outputBox"></textarea>
+		  <textarea class="form-control" rows="9" id="outputBox" readonly></textarea>
+		</div>
+	</div>
+	<div class="alertBoxSuccess">
+		<div class="alert alert-success" data-dismiss="alert" aria-label="close">
+		  <strong>Success!</strong> Successfully Done.
 		</div>
 	</div>
   </div>
