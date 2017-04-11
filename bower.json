@@ -1,0 +1,21 @@
+{
+  "name": "html_min",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Himanshu Nath <hnath723@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Himanshu-Nath/Html-Minifier",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
